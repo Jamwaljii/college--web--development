@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aarav Jamwal's student portfolio website">
+  <title>Aarav Jamwal | Student Portfolio | Section AY</title>
+  <style>
+    :root { --navy:#10213b; --blue:#3977f6; --pale:#eef4ff; --ink:#17233b; --muted:#5d6b82; --white:#fff; }
+    * { box-sizing:border-box; scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); background:#f7f9fd; line-height:1.6; }
+    header { background:var(--navy); color:white; padding:22px 7%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; }
+    .brand { font-size:1.2rem; font-weight:800; letter-spacing:.3px; }
+    nav { display:flex; flex-wrap:wrap; gap:20px; }
+    nav a { color:#e5edff; text-decoration:none; font-size:.95rem; }
+    nav a:hover { color:#8fb3ff; }
+    .hero { background:linear-gradient(135deg,#10213b,#244d8d); color:white; padding:82px 7% 90px; }
+    .hero-inner { max-width:1000px; margin:auto; display:grid; grid-template-columns:1.5fr 1fr; align-items:center; gap:40px; }
+    .eyebrow { color:#b9d0ff; text-transform:uppercase; letter-spacing:2px; font-size:.82rem; font-weight:bold; }
+    h1 { font-size:clamp(2.4rem,6vw,4.5rem); line-height:1.08; margin:14px 0; }
+    .hero p { max-width:590px; color:#e1eaff; font-size:1.1rem; }
+    .button { display:inline-block; background:#fff; color:var(--navy); padding:12px 20px; border-radius:10px; font-weight:bold; text-decoration:none; margin-top:14px; }
+    .profile-card { background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.22); padding:28px; border-radius:22px; text-align:center; }
+    .avatar { margin:auto auto 15px; width:125px; height:125px; display:grid; place-items:center; border-radius:50%; background:#dce8ff; color:#17376c; font-size:2.5rem; font-weight:800; border:5px solid rgba(255,255,255,.3); }
+    .profile-card h2 { margin:8px 0 0; }
+    .profile-card p { margin:3px 0; font-size:.95rem; }
+    main { max-width:1050px; margin:auto; padding:25px 22px 60px; }
+    section { padding:38px 0 18px; }
+    .section-label { color:var(--blue); font-weight:bold; text-transform:uppercase; letter-spacing:1.5px; font-size:.8rem; }
+    h2.section-title { font-size:2rem; margin:4px 0 18px; }
+    .about { background:white; padding:25px; border-radius:16px; box-shadow:0 8px 28px rgba(22,42,76,.06); }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .card { background:white; padding:23px; border-radius:16px; border:1px solid #e7edf7; box-shadow:0 7px 20px rgba(22,42,76,.04); }
+    .card .emoji { font-size:1.8rem; }
+    .card h3 { margin:10px 0 5px; }
+    .card p { margin:0; color:var(--muted); }
+    .skills { display:flex; flex-wrap:wrap; gap:10px; }
+    .skill { background:var(--pale); color:#234a91; padding:9px 14px; border-radius:999px; font-weight:bold; font-size:.92rem; }
+    .contact { background:var(--navy); color:white; border-radius:20px; padding:30px; }
+    .contact p { color:#dbe6ff; }
+    footer { text-align:center; color:var(--muted); padding:24px; font-size:.9rem; }
+    @media(max-width:720px) { .hero-inner { grid-template-columns:1fr; } .hero { padding-top:55px; } .profile-card { max-width:350px; } .cards { grid-template-columns:1fr; } header { align-items:flex-start; } nav { gap:12px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">AJ. <span style="color:#8fb3ff">PORTFOLIO</span></div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Student Portfolio · Section AY</div>
+        <h1>Hello, I'm<br>Aarav Jamwal.</h1>
+        <p>A B.Tech student exploring technology, programming, and creative ways to solve problems. Welcome to my personal portfolio.</p>
+        <a class="button" href="#about">Explore My Portfolio ↓</a>
+      </div>
+      <div class="profile-card">
+        <div class="avatar">AJ</div>
+        <h2>Aarav Jamwal</h2>
+        <p>B.Tech Student</p>
+        <p>Section AY</p>
+        <p>Computer Science Engineering</p>
+      </div>
+    </div>
+  </div>
+  <main>
+    <section id="about">
+      <div class="section-label">A little introduction</div>
+      <h2 class="section-title">About Me</h2>
+      <div class="about">
+        <p>My name is <strong>Aarav Jamwal</strong>. I am a B.Tech student interested in computer science, emerging technologies, and web development. I enjoy learning new concepts and building projects that turn ideas into useful digital experiences.</p>
+        <p>This portfolio website is created as an academic assignment using HTML and CSS, and it demonstrates a clean, responsive website layout.</p>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="section-label">What I'm learning</div>
+      <h2 class="section-title">Skills & Interests</h2>
+      <div class="skills">
+        <span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">Programming</span>
+        <span class="skill">Problem Solving</span><span class="skill">Computer Science</span><span class="skill">Web Design</span>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section-label">My work</div>
+      <h2 class="section-title">Projects & Goals</h2>
+      <div class="cards">
+        <article class="card"><div class="emoji">🌐</div><h3>Personal Portfolio</h3><p>A responsive website introducing me, my interests, and my learning goals.</p></article>
+        <article class="card"><div class="emoji">💻</div><h3>Learning to Code</h3><p>Practising programming fundamentals and developing problem-solving skills.</p></article>
+        <article class="card"><div class="emoji">🚀</div><h3>Future Goals</h3><p>Build more useful projects and keep exploring new technologies.</p></article>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact">
+        <div class="section-label" style="color:#a9c6ff">Get in touch</div>
+        <h2 class="section-title">Contact</h2>
+        <p>Thanks for visiting my portfolio. You can add your college email or other contact information here before publishing.</p>
+        <p><strong>Name:</strong> Aarav Jamwal · <strong>Section:</strong> AY</p>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Aarav Jamwal · Student Portfolio · Section AY</footer>
+</body>
+</html>
